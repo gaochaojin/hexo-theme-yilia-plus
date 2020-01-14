@@ -26,7 +26,7 @@
       <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
         <div class="tooltip tooltip-east">
           <span class="tooltip-item">
-            赏
+            关注
           </span>
           <span class="tooltip-content">
             <span class="tooltip-text">
@@ -43,7 +43,7 @@
                   <% if(theme.weixin) {%>
                   <div class="reward-box-item">
                     <img class="reward-img" src="<%- url_for(theme.weixin) %>">
-                    <span class="reward-type">微信</span>
+                    <span class="reward-type">一个有梦想的程序员</span>
                   </div>
                   <% } %>
                 </div>
@@ -56,7 +56,7 @@
     <% } %>
 
     <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
-    <div class="declare"> 
+    <div class="declare">
       <ul class="post-copyright">
         <li>
           <strong>本文作者：</strong>
@@ -69,7 +69,7 @@
         <% if (theme.copyright_text || theme.copyright_text == null){ %>
         <li>
           <strong>版权声明： </strong>
-          <% var defaultCopyrightText = '本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！'; %>
+          <% var defaultCopyrightText = '本博客所有文章，转载请注明出处！'; %>
           <%- ( theme.copyright_text == null || theme.copyright_text == true ) ? defaultCopyrightText : theme.copyright_text %>
         </li>
         <% } %>
